@@ -4,9 +4,9 @@
 /**
  * main - main entry
  *
- * Description: a program that determine if a random number is positive or negative
+ * Description: determine if a random number is positive or negative
  *
- * Return 0 (success)
+ * return: 0 (success)
  */
 
 int main(void)
@@ -21,5 +21,6 @@ int main(void)
 		printf("%d is %s\n", n, "positive");
 	else
 		printf("%i is %s\n", n, "zero");
+
 	return (0);
 }
