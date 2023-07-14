@@ -4,9 +4,9 @@
 /**
  * main - main entry
  *
- * Description: a program that determine if a random number is posisitve or negative
+ * Description: a program that determine if a random number is positive or negative
  *
- * Retrurn 0 (success)
+ * Return 0 (success)
  */
 
 int main(void)
@@ -15,11 +15,11 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n > 0)
-		printf("%i is a positive\n", n);
-	else if (n == 0)
-		printf("%i is a zero\n", n);
+	if (n < 0)
+		printf("%d is %s\n", n, "negative");
+	else if (n > 0)
+		printf("%d is %s\n", n, "positive");
 	else
-		printf("%i is a negative\n", n);
+		printf("%i is %s\n", n, "zero");
 	return (0);
 }
