@@ -6,7 +6,8 @@
 */
 void print_times_table(int n)
 {
-	int digit, mult, result;
+	int mult, digit, result;
+
 	if (n <= 15 && n >= 0)
 	{
 		for (digit = 0; digit <= n; digit++)
@@ -35,4 +36,5 @@ void print_times_table(int n)
 			_putchar('\n');
 		}
 	}
+
 }
