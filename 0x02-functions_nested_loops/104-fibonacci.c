@@ -6,7 +6,7 @@
  * Return: number of digits
 */
 
-int num_length(int num)
+int numLength(int num)
 {
 	int length - 0;
 
