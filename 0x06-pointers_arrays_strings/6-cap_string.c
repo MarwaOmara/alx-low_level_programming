@@ -39,19 +39,19 @@ int isDelimiter(char c)
 char *cap_string(char *s)
 {
 char *ptr = s;
-int found_delimiter = 1;
+int foundDelimit = 1;
 
 while (*s)
 {
 if (isdelimiter(*s))
-found_delimiter = 1;
-else if (islower(*s) && found_delimiter)
+foundDelimit = 1;
+else if (islower(*s) && foundDelimit)
 {
 *s -= 32;
-found_delimiter = 0;
+foundDelimit = 0;
 }
 else
-found_delimiter = 0;
+foundDelimit = 0;
 s++;
 }
 return (ptr);
