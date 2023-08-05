@@ -7,14 +7,13 @@
  * Return: 0 Success
 */
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
 	int i = 0;
 
-	while (argc--)
+	for (i = 0; i < argc; i++)
 	{
 		printf("%d\n", argv[i]);
-		i++;
 	}
 	return (0);
 }
